@@ -1,0 +1,911 @@
+
+*** Running vivado
+    with args -log MAIN.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MAIN.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source MAIN.tcl -notrace
+Command: synth_design -top MAIN -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16452 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 949.598 ; gain = 233.508
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'MAIN' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/MAIN.v:22]
+	Parameter maxcnt bound to: 50000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Cpu' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/C.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Mux2_32bit' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/Mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mux2_32bit' (1#1) [D:/v_workspace/project_6/project_6.srcs/sources_1/new/Mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/PC.v:31]
+WARNING: [Synth 8-5788] Register cur_pc_reg in module PC is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/v_workspace/project_6/project_6.srcs/sources_1/new/PC.v:52]
+WARNING: [Synth 8-5788] Register pre_pc_reg in module PC is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/v_workspace/project_6/project_6.srcs/sources_1/new/PC.v:52]
+WARNING: [Synth 8-5788] Register hold_pc_reg in module PC is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/v_workspace/project_6/project_6.srcs/sources_1/new/PC.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (2#1) [D:/v_workspace/project_6/project_6.srcs/sources_1/new/PC.v:31]
+INFO: [Synth 8-6157] synthesizing module 'PCadd4' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/PCadd4.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PCadd4' (3#1) [D:/v_workspace/project_6/project_6.srcs/sources_1/new/PCadd4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'InsMemory' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/InsMemory.v:23]
+	Parameter length bound to: 71 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'D:/test2.txt' is read successfully [D:/v_workspace/project_6/project_6.srcs/sources_1/new/InsMemory.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'InsMemory' (4#1) [D:/v_workspace/project_6/project_6.srcs/sources_1/new/InsMemory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RegFile' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/RegFile.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RegFile' (5#1) [D:/v_workspace/project_6/project_6.srcs/sources_1/new/RegFile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ConUnit' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/ConUnit.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/v_workspace/project_6/project_6.srcs/sources_1/new/ConUnit.v:76]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/v_workspace/project_6/project_6.srcs/sources_1/new/ConUnit.v:135]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/v_workspace/project_6/project_6.srcs/sources_1/new/ConUnit.v:153]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/v_workspace/project_6/project_6.srcs/sources_1/new/ConUnit.v:167]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/v_workspace/project_6/project_6.srcs/sources_1/new/ConUnit.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'ConUnit' (6#1) [D:/v_workspace/project_6/project_6.srcs/sources_1/new/ConUnit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Ext' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/Ext.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Ext' (7#1) [D:/v_workspace/project_6/project_6.srcs/sources_1/new/Ext.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Alu' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/Alu.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/v_workspace/project_6/project_6.srcs/sources_1/new/Alu.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Alu' (8#1) [D:/v_workspace/project_6/project_6.srcs/sources_1/new/Alu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BranchCon' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/BranchCon.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/v_workspace/project_6/project_6.srcs/sources_1/new/BranchCon.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'BranchCon' (9#1) [D:/v_workspace/project_6/project_6.srcs/sources_1/new/BranchCon.v:24]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/DataMemory.v:23]
+WARNING: [Synth 8-4767] Trying to implement RAM 'DataMem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "DataMem_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (10#1) [D:/v_workspace/project_6/project_6.srcs/sources_1/new/DataMemory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IF_ID' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/REGs.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dff_32' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/dff.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'dff_32' (11#1) [D:/v_workspace/project_6/project_6.srcs/sources_1/new/dff.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'IF_ID' (12#1) [D:/v_workspace/project_6/project_6.srcs/sources_1/new/REGs.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ID_EX' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/REGs.v:41]
+INFO: [Synth 8-6157] synthesizing module 'dff_2' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/dff.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'dff_2' (13#1) [D:/v_workspace/project_6/project_6.srcs/sources_1/new/dff.v:35]
+INFO: [Synth 8-6157] synthesizing module 'dff_5' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/dff.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'dff_5' (14#1) [D:/v_workspace/project_6/project_6.srcs/sources_1/new/dff.v:74]
+INFO: [Synth 8-6157] synthesizing module 'dff' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/dff.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'dff' (15#1) [D:/v_workspace/project_6/project_6.srcs/sources_1/new/dff.v:22]
+INFO: [Synth 8-6157] synthesizing module 'dff_3' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/dff.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'dff_3' (16#1) [D:/v_workspace/project_6/project_6.srcs/sources_1/new/dff.v:48]
+INFO: [Synth 8-6157] synthesizing module 'dff_4' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/dff.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'dff_4' (17#1) [D:/v_workspace/project_6/project_6.srcs/sources_1/new/dff.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'ID_EX' (18#1) [D:/v_workspace/project_6/project_6.srcs/sources_1/new/REGs.v:41]
+INFO: [Synth 8-6157] synthesizing module 'EX_MEM' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/REGs.v:119]
+INFO: [Synth 8-6155] done synthesizing module 'EX_MEM' (19#1) [D:/v_workspace/project_6/project_6.srcs/sources_1/new/REGs.v:119]
+INFO: [Synth 8-6157] synthesizing module 'MEM_WB' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/REGs.v:163]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_WB' (20#1) [D:/v_workspace/project_6/project_6.srcs/sources_1/new/REGs.v:163]
+WARNING: [Synth 8-7023] instance 'MEM_WB' of module 'MEM_WB' has 15 connections declared, but only 13 given [D:/v_workspace/project_6/project_6.srcs/sources_1/new/C.v:161]
+INFO: [Synth 8-6157] synthesizing module 'Mux3_32bit' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/Mux.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'Mux3_32bit' (21#1) [D:/v_workspace/project_6/project_6.srcs/sources_1/new/Mux.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'Cpu' (22#1) [D:/v_workspace/project_6/project_6.srcs/sources_1/new/C.v:22]
+WARNING: [Synth 8-689] width (1) of port connection 'AluResult' does not match port width (32) of module 'Cpu' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/MAIN.v:50]
+WARNING: [Synth 8-689] width (1) of port connection 'RegOutB' does not match port width (32) of module 'Cpu' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/MAIN.v:50]
+WARNING: [Synth 8-689] width (1) of port connection 'MemDataOut' does not match port width (32) of module 'Cpu' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/MAIN.v:50]
+INFO: [Synth 8-6157] synthesizing module 'hex8' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/hex8.v:23]
+	Parameter maxcnt bound to: 50000 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/v_workspace/project_6/project_6.srcs/sources_1/new/hex8.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'hex8' (23#1) [D:/v_workspace/project_6/project_6.srcs/sources_1/new/hex8.v:23]
+WARNING: [Synth 8-5788] Register nclk_reg in module MAIN is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/v_workspace/project_6/project_6.srcs/sources_1/new/MAIN.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'MAIN' (24#1) [D:/v_workspace/project_6/project_6.srcs/sources_1/new/MAIN.v:22]
+WARNING: [Synth 8-3331] design hex8 has unconnected port rst_n
+WARNING: [Synth 8-3331] design ConUnit has unconnected port clk
+WARNING: [Synth 8-3331] design ConUnit has unconnected port Instruction[11]
+WARNING: [Synth 8-3331] design ConUnit has unconnected port Instruction[10]
+WARNING: [Synth 8-3331] design ConUnit has unconnected port Instruction[9]
+WARNING: [Synth 8-3331] design ConUnit has unconnected port Instruction[8]
+WARNING: [Synth 8-3331] design ConUnit has unconnected port Instruction[7]
+WARNING: [Synth 8-3331] design Cpu has unconnected port rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1092.344 ; gain = 376.254
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1092.344 ; gain = 376.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1092.344 ; gain = 376.254
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.168 . Memory (MB): peak = 1092.344 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/v_workspace/project_6/project_6.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [D:/v_workspace/project_6/project_6.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/v_workspace/project_6/project_6.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MAIN_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MAIN_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1208.918 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1208.918 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1208.918 ; gain = 492.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1208.918 ; gain = 492.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1208.918 ; gain = 492.828
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'cur_pc_reg[31:0]' into 'hold_pc_reg[31:0]' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/PC.v:52]
+INFO: [Synth 8-5546] ROM "InsMem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "InsMem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "InsMem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "InsMem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Aluop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/v_workspace/project_6/project_6.srcs/sources_1/new/Alu.v:110]
+INFO: [Synth 8-802] inferred FSM for state register 'disp_bit_reg' in module 'hex8'
+INFO: [Synth 8-5544] ROM "sel_reg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'Jump_reg' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/ConUnit.v:67]
+WARNING: [Synth 8-327] inferring latch for variable 'BranchType_reg' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/ConUnit.v:68]
+WARNING: [Synth 8-327] inferring latch for variable 'MemRead_reg' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/ConUnit.v:69]
+WARNING: [Synth 8-327] inferring latch for variable 'MemtoReg_reg' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/ConUnit.v:70]
+WARNING: [Synth 8-327] inferring latch for variable 'Aluop_reg' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/ConUnit.v:77]
+WARNING: [Synth 8-327] inferring latch for variable 'MemWrite_reg' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/ConUnit.v:71]
+WARNING: [Synth 8-327] inferring latch for variable 'AluSrc_reg' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/ConUnit.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'RegWrite_reg' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/ConUnit.v:73]
+WARNING: [Synth 8-327] inferring latch for variable 'sign_reg' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/ConUnit.v:136]
+WARNING: [Synth 8-327] inferring latch for variable 'Extop_reg' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/ConUnit.v:75]
+WARNING: [Synth 8-327] inferring latch for variable 'Mem_sel_reg' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/ConUnit.v:103]
+WARNING: [Synth 8-327] inferring latch for variable 'Imm_reg' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/Ext.v:40]
+WARNING: [Synth 8-327] inferring latch for variable 'ZF_reg' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/Alu.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'CF_reg' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/Alu.v:63]
+WARNING: [Synth 8-327] inferring latch for variable 'OF_reg' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/Alu.v:43]
+WARNING: [Synth 8-327] inferring latch for variable 'Result_reg' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/Alu.v:40]
+WARNING: [Synth 8-327] inferring latch for variable 'branchE_reg' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/BranchCon.v:35]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE3 |                        000000001 |                             0000
+                 iSTATE2 |                        000000010 |                             0001
+                 iSTATE1 |                        000000100 |                             0010
+                  iSTATE |                        000001000 |                             0011
+                 iSTATE0 |                        000010000 |                             0100
+                 iSTATE7 |                        000100000 |                             0101
+                 iSTATE5 |                        001000000 |                             0110
+                 iSTATE4 |                        010000000 |                             0111
+                 iSTATE6 |                        100000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'disp_bit_reg' using encoding 'one-hot' in module 'hex8'
+WARNING: [Synth 8-327] inferring latch for variable 'seg_reg' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/hex8.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'seg1_reg' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/hex8.v:119]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1208.918 ; gain = 492.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |DataMemory__GB0 |           1|     34596|
+|2     |DataMemory__GB1 |           1|     16821|
+|3     |DataMemory__GB2 |           1|     13201|
+|4     |DataMemory__GB3 |           1|     13967|
+|5     |Cpu__GC0        |           1|     15584|
+|6     |MAIN__GC0       |           1|      1816|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 7     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     30 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 13    
+	               30 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	                8 Bit    Registers := 257   
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   7 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 22    
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     30 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 750   
+	   5 Input      8 Bit        Muxes := 178   
+	   4 Input      8 Bit        Muxes := 328   
+	   3 Input      8 Bit        Muxes := 32    
+	  61 Input      8 Bit        Muxes := 4     
+	  15 Input      5 Bit        Muxes := 1     
+	   7 Input      5 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 80    
+	   7 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 168   
+	   3 Input      2 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 1     
+	  19 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 3     
+	  15 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+	  19 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MAIN 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     30 Bit       Adders := 1     
++---Registers : 
+	               30 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     30 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module DataMemory 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 256   
++---Muxes : 
+	   7 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 750   
+	   5 Input      8 Bit        Muxes := 178   
+	   4 Input      8 Bit        Muxes := 328   
+	   3 Input      8 Bit        Muxes := 32    
+	   5 Input      3 Bit        Muxes := 80    
+	   5 Input      2 Bit        Muxes := 168   
+	   4 Input      1 Bit        Muxes := 1     
+Module Mux2_32bit__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Mux2_32bit__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Mux2_32bit__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Mux2_32bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+Module PCadd4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module InsMemory 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 3     
++---Muxes : 
+	  61 Input      8 Bit        Muxes := 4     
+Module ConUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	  15 Input      5 Bit        Muxes := 1     
+	   7 Input      5 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module Ext 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   3 Input     32 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module Alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   3 Input     32 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	  19 Input      2 Bit        Muxes := 1     
+	  19 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module BranchCon 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+Module dff_32__9 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module dff_32 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module dff_2__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module dff_2 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module dff_32__5 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module dff_32__6 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module dff_32__7 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module dff_32__8 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module dff_5__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module dff_5 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module dff__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__13 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__14 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__15 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff_3 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module dff_4 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module dff__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff_32__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module dff_32__4 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module dff_4__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module dff_5__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module dff__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff_5__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module dff_32__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module dff_32__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module Mux3_32bit__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module Mux3_32bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module hex8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'i_0/hex8/FSM_onehot_disp_bit_reg[7]' (FDE) to 'i_0/hex8/sel_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex8/FSM_onehot_disp_bit_reg[8]' (FDE) to 'i_0/hex8/sel_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex8/FSM_onehot_disp_bit_reg[6]' (FDE) to 'i_0/hex8/sel_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex8/FSM_onehot_disp_bit_reg[5]' (FDE) to 'i_0/hex8/sel_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex8/FSM_onehot_disp_bit_reg[4]' (FDE) to 'i_0/hex8/sel_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex8/FSM_onehot_disp_bit_reg[3]' (FDE) to 'i_0/hex8/sel_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex8/FSM_onehot_disp_bit_reg[2]' (FDE) to 'i_0/hex8/sel_reg_reg[1]'
+DSP Report: Generating DSP Result0, operation Mode is: A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: Generating DSP Result0, operation Mode is: A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: Generating DSP Result0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+INFO: [Synth 8-5546] ROM "ConUnit/Aluop" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design Cpu__GC0 has port O177[27] driven by constant 0
+WARNING: [Synth 8-3917] design Cpu__GC0 has port O177[19] driven by constant 0
+WARNING: [Synth 8-3917] design Cpu__GC0 has port O177[11] driven by constant 0
+WARNING: [Synth 8-3917] design Cpu__GC0 has port O177[3] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'RegFile/OutDataA0__3' (FDRE) to 'IF_ID/dff_instruction/q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'RegFile/OutDataA0__2' (FDRE) to 'IF_ID/dff_instruction/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'RegFile/OutDataA0__1' (FDRE) to 'IF_ID/dff_instruction/q_reg[17]'
+INFO: [Synth 8-3886] merging instance 'RegFile/OutDataA0__0' (FDRE) to 'IF_ID/dff_instruction/q_reg[18]'
+INFO: [Synth 8-3886] merging instance 'RegFile/OutDataA0' (FDRE) to 'IF_ID/dff_instruction/q_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ConUnit/Mem_sel_reg[0] )
+INFO: [Synth 8-3886] merging instance 'ConUnit/Mem_sel_reg[2]' (LD) to 'ConUnit/Mem_sel_reg[3]'
+INFO: [Synth 8-3886] merging instance 'IF_ID/dff_instruction/q_reg[19]' (FDRE) to 'IF_ID/dff_instruction/q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'IF_ID/dff_instruction/q_reg[27]' (FDRE) to 'IF_ID/dff_instruction/q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'IF_ID/dff_instruction/q_reg[3]' (FDRE) to 'IF_ID/dff_instruction/q_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IF_ID/dff_instruction/q_reg[11] )
+INFO: [Synth 8-3886] merging instance 'ID_EX/dff_Mem_sel/q_reg[2]' (FDRE) to 'ID_EX/dff_Mem_sel/q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'RegFile/OutDataB0__3' (FDRE) to 'IF_ID/dff_instruction/q_reg[20]'
+INFO: [Synth 8-3886] merging instance 'RegFile/OutDataB0__2' (FDRE) to 'IF_ID/dff_instruction/q_reg[21]'
+INFO: [Synth 8-3886] merging instance 'RegFile/OutDataB0__1' (FDRE) to 'IF_ID/dff_instruction/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'RegFile/OutDataB0__0' (FDRE) to 'IF_ID/dff_instruction/q_reg[23]'
+INFO: [Synth 8-3886] merging instance 'RegFile/OutDataB0' (FDRE) to 'IF_ID/dff_instruction/q_reg[24]'
+INFO: [Synth 8-3886] merging instance 'EX_MEM/dff_Mem_sel/q_reg[2]' (FDRE) to 'EX_MEM/dff_Mem_sel/q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'EX_MEM/dff_MemRead/q_reg' (FDRE) to 'EX_MEM/dff_rd/q_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\EX_MEM/dff_rd/q_reg[4] )
+INFO: [Synth 8-3886] merging instance 'ConUnit/MemRead_reg' (LD) to 'ConUnit/Extop_reg'
+INFO: [Synth 8-3886] merging instance 'MEM_WB/dff_rd/q_reg[4]' (FDRE) to 'EX_MEM/dff_rd/q_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\EX_MEM/dff_rd/q_reg[4] )
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ConUnit/MemRead_reg__0/Q' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/ConUnit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/v_workspace/project_6/project_6.srcs/sources_1/new/ConUnit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/v_workspace/project_6/project_6.srcs/sources_1/new/ConUnit.v:58]
+WARNING: [Synth 8-3332] Sequential element (CF_reg) is unused and will be removed from module Alu.
+WARNING: [Synth 8-3332] Sequential element (OF_reg) is unused and will be removed from module Alu.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:01:03 . Memory (MB): peak = 1208.918 ; gain = 492.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+-----------------+-----------+----------------------+--------------+
+|Module Name | RTL Object      | Inference | Size (Depth x Width) | Primitives   | 
++------------+-----------------+-----------+----------------------+--------------+
+|Cpu__GC0    | RegFile/Reg_reg | Implied   | 32 x 32              | RAM32M x 12	 | 
++------------+-----------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Alu         | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Alu         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Alu         | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |DataMemory__GB0 |           1|     21116|
+|2     |DataMemory__GB1 |           1|      6482|
+|3     |DataMemory__GB2 |           1|      6236|
+|4     |DataMemory__GB3 |           1|      9921|
+|5     |Cpu__GC0        |           1|      8472|
+|6     |MAIN__GC0       |           1|       300|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:01:13 . Memory (MB): peak = 1208.918 ; gain = 492.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemoryi_4/\OutData_reg[31] )
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[16]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[20]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[9]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[12]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[31]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[30]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[30]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[29]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[17]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[29]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[27]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[29]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[18]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[29]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[21]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[29]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[14]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[29]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[29]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[10]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[23]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[6]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[11]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[13]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[15]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[8]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[26]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[19]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[22]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[7]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[28]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[25]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[4]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[25]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[1]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[25]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[0]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[25]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[5]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[25]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[24]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[25]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[25]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_5/MEM_WB/dff_MemDataout/q_reg[3]' (FDRE) to 'i_5/MEM_WB/dff_MemDataout/q_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_5/\MEM_WB/dff_MemDataout/q_reg[2] )
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:01:13 . Memory (MB): peak = 1210.312 ; gain = 494.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+-----------------+-----------+----------------------+--------------+
+|Module Name | RTL Object      | Inference | Size (Depth x Width) | Primitives   | 
++------------+-----------------+-----------+----------------------+--------------+
+|Cpu__GC0    | RegFile/Reg_reg | Implied   | 32 x 32              | RAM32M x 12	 | 
++------------+-----------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |Cpu__GC0      |           1|      8306|
+|2     |MAIN__GC0     |           1|       300|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:01:14 . Memory (MB): peak = 1238.457 ; gain = 522.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:01:17 . Memory (MB): peak = 1250.906 ; gain = 534.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:01:17 . Memory (MB): peak = 1250.906 ; gain = 534.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:01:17 . Memory (MB): peak = 1250.906 ; gain = 534.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:01:17 . Memory (MB): peak = 1250.906 ; gain = 534.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:01:17 . Memory (MB): peak = 1250.906 ; gain = 534.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:01:17 . Memory (MB): peak = 1250.906 ; gain = 534.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     4|
+|2     |CARRY4  |   665|
+|3     |DSP48E1 |     3|
+|4     |LUT1    |   128|
+|5     |LUT2    |   273|
+|6     |LUT3    |  1170|
+|7     |LUT4    |   249|
+|8     |LUT5    |  1124|
+|9     |LUT6    |   411|
+|10    |MUXF7   |     1|
+|11    |RAM32M  |    12|
+|12    |FDCE    |    30|
+|13    |FDRE    |   286|
+|14    |LD      |    92|
+|15    |IBUF    |     2|
+|16    |OBUF    |    22|
++------+--------+------+
+
+Report Instance Areas: 
++------+----------------------+----------+------+
+|      |Instance              |Module    |Cells |
++------+----------------------+----------+------+
+|1     |top                   |          |  4472|
+|2     |  Cpu                 |Cpu       |  4293|
+|3     |    Alu               |Alu       |  1882|
+|4     |    BranchCon         |BranchCon |     1|
+|5     |    ConUnit           |ConUnit   |    13|
+|6     |    EX_MEM            |EX_MEM    |    39|
+|7     |      dff_AluResult   |dff_32_12 |    32|
+|8     |      dff_MemtoReg    |dff_13    |     1|
+|9     |      dff_RegWrite    |dff_14    |     1|
+|10    |      dff_rd          |dff_5_15  |     5|
+|11    |    Ext               |Ext       |    32|
+|12    |    ID_EX             |ID_EX     |  2013|
+|13    |      dff_AluSrc      |dff_2     |     1|
+|14    |      dff_Aluop       |dff_5_3   |   147|
+|15    |      dff_MemtoReg    |dff_4     |     1|
+|16    |      dff_RegOutA     |dff_32_5  |    32|
+|17    |      dff_RegOutB     |dff_32_6  |    32|
+|18    |      dff_RegWrite    |dff_7     |     1|
+|19    |      dff_branchType  |dff_3     |     5|
+|20    |      dff_extout      |dff_32_8  |  1277|
+|21    |      dff_rd          |dff_5_9   |     5|
+|22    |      dff_s1          |dff_2_10  |   463|
+|23    |      dff_s3          |dff_2_11  |    49|
+|24    |    IF_ID             |IF_ID     |   110|
+|25    |      dff_instruction |dff_32_1  |   110|
+|26    |    MEM_WB            |MEM_WB    |    70|
+|27    |      dff_AluResult   |dff_32    |    32|
+|28    |      dff_MemtoReg    |dff       |    33|
+|29    |      dff_RegWrite    |dff_0     |     1|
+|30    |      dff_rd          |dff_5     |     4|
+|31    |    PC                |PC        |   113|
+|32    |    PCadd4            |PCadd4    |     8|
+|33    |    RegFile           |RegFile   |    12|
+|34    |  hex8                |hex8      |    73|
++------+----------------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:01:17 . Memory (MB): peak = 1250.906 ; gain = 534.816
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 3 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:01:15 . Memory (MB): peak = 1250.906 ; gain = 418.242
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:01:18 . Memory (MB): peak = 1250.906 ; gain = 534.816
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1262.906 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 773 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1262.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 104 instances were transformed.
+  LD => LDCE: 92 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+175 Infos, 42 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:24 . Memory (MB): peak = 1262.906 ; gain = 837.051
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1262.906 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/v_workspace/project_6/project_6.runs/synth_1/MAIN.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MAIN_utilization_synth.rpt -pb MAIN_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jan  8 23:29:41 2024...
