@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Jan  5 20:03:34 2024
+# Process ID: 11564
+# Current directory: C:/Users/fcg/Desktop/系统硬件设计/单周期cpu/project_6/project_6.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/fcg/Desktop/系统硬件设计/单周期cpu/project_6/project_6.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/fcg/Desktop/系统硬件设计/单周期cpu/project_6/project_6.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/fcg/Desktop/系统硬件设计/单周期cpu/project_6/project_6.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/fcg/Desktop/系统硬件设计/单周期cpu/project_6/project_6.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Jan  5 20:03:35 2024...
