@@ -1,0 +1,103 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Nov  1 14:27:55 2023
+| Host         : DESKTOP-RFLO5M9 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file MAIN_control_sets_placed.rpt
+| Design       : MAIN
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    25 |
+|    Minimum number of control sets                        |    25 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    88 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    25 |
+| >= 0 to < 4        |     9 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     7 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             212 |          104 |
+| No           | No                    | Yes                    |              30 |           12 |
+| No           | Yes                   | No                     |              50 |           18 |
+| Yes          | No                    | No                     |            2067 |         1598 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              25 |           24 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+-------------------------------------+----------------------------+------------------+----------------+
+|         Clock Signal        |            Enable Signal            |      Set/Reset Signal      | Slice Load Count | Bel Load Count |
++-----------------------------+-------------------------------------+----------------------------+------------------+----------------+
+|  Cpu/ConUnit/Aluop_reg[3]_0 |                                     |                            |                1 |              1 |
+|  Cpu/PC/InsAddr_reg[2]_0    |                                     |                            |                1 |              1 |
+|  Cpu/PC/InsAddr_reg[2]_2    |                                     |                            |                1 |              1 |
+|  Cpu/PC/InsAddr_reg[3]_1    |                                     |                            |                1 |              1 |
+|  Cpu/PC/InsAddr_reg[3]_0    |                                     |                            |                1 |              1 |
+|  Cpu/PC/InsAddr_reg[3]_2[0] |                                     |                            |                1 |              2 |
+|  Cpu/PC/InsAddr_reg[4]_0    |                                     |                            |                2 |              2 |
+|  clk_IBUF_BUFG              |                                     |                            |                3 |              3 |
+| ~nclk_reg_n_0_BUFG          |                                     |                            |                1 |              3 |
+|  Cpu/PC/InsAddr_reg[5]_2[0] |                                     |                            |                2 |              4 |
+|  hex8/clk_1k_reg_n_1        | hex8/data_reg_0                     | hex8/sel_OBUF[7]           |                3 |              4 |
+|  Cpu/PC/InsAddr_reg[2]_1    |                                     |                            |                4 |              5 |
+|  hex8/seg_reg[6]_i_2_n_1    |                                     |                            |                2 |              7 |
+|  hex8/seg1_reg[6]_i_1_n_1   |                                     |                            |                3 |              7 |
+| ~nclk_reg_n_0_BUFG          | Cpu/ConUnit/MemRead_reg_0[1]        | Cpu/ConUnit/SR[0]          |                7 |              7 |
+| ~nclk_reg_n_0_BUFG          | Cpu/ConUnit/MemRead_reg_0[0]        |                            |                8 |              8 |
+|  hex8/clk_1k_reg_n_1        | hex8/FSM_onehot_disp_bit[1]_i_1_n_1 |                            |                3 |             11 |
+| ~nclk_reg_n_0_BUFG          | Cpu/ConUnit/MemRead_reg_0[2]        | Cpu/ConUnit/SR[1]          |               14 |             14 |
+|  clk_IBUF_BUFG              |                                     | hex8/clk_1k                |                5 |             18 |
+|  Cpu/PC/E[0]                |                                     |                            |               12 |             22 |
+|  clk_IBUF_BUFG              |                                     | cnt[29]_i_2_n_1            |               12 |             30 |
+|  nclk_reg_n_0_BUFG          |                                     | Cpu/PC/InsAddr[31]_i_1_n_1 |               13 |             32 |
+|  nclk_reg_n_0_BUFG          | Cpu/ConUnit/Con_signal_RegWrite     |                            |               12 |             96 |
+|  n_0_13038_BUFG             |                                     |                            |               69 |            152 |
+|  nclk_reg_n_0_BUFG          | Cpu/ConUnit/E[0]                    |                            |             1587 |           2048 |
++-----------------------------+-------------------------------------+----------------------------+------------------+----------------+
+
+
